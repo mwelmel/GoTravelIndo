@@ -55,8 +55,14 @@ header {
     margin-right: 10px;
 }
 
+.container {
+    display: flex;
+    gap: 6rem;
+}
+
 .navbar {
     display: flex;
+    /* justify-content: space-between; */
     gap: 25px; /* Kurangi gap agar lebih rapi */
 }
 
