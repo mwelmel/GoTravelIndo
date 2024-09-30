@@ -41,69 +41,35 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit shadow agar lebih jelas */
 }
 
-header.sticky {
-    background: rgba(51, 55, 44, 1); /* Buat solid saat di-scroll */
-    padding: 10px 17%;
+header {
+    padding: 15px 10%; /* Kurangi padding agar lebih compact */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    font-size: 33px;
+    font-size: 30px; /* Sedikit lebih kecil agar lebih proporsional */
+    font-weight: bold;
     color: var(--text-color);
-    font-weight: 700;
-}
-
-span {
-    color: var(--main-color);
+    margin-right: 10px;
 }
 
 .navbar {
-    display: flex; /* Agar item di navbar sejajar secara horizontal */
-    gap: 20px; /* Memberikan jarak antar elemen navbar */
+    display: flex;
+    gap: 25px; /* Kurangi gap agar lebih rapi */
 }
 
 .navbar a {
     color: var(--text-color);
-    font-size: var(--p-font);
+    font-size: 1.3rem; /* Sesuaikan ukuran font */
     font-weight: 500;
-    margin: 10px 22px; /* Sesuaikan margin agar lebih rapat */
-    transition: all 0.5s ease;
+    margin: 0 25px; /* Kurangi margin agar lebih compact */
+    transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-    color: var(--main-color);
-}
-
-.h-right {
-    display: flex; /* Menjaga elemen di bagian kanan tetap sejajar */
-    align-items: center; 
-    gap: 15px; /* Memberikan jarak antar ikon media sosial */
-}
-
-.h-right a:first-child {
-    color: var(--text-color);
-    font-size: var(--p-font);
-    margin-right: 20px;
-}
-
-.h-right a {
-    font-size: 20px;
-    color: var(--text-color);
-    transition: all 0.5s ease;
-    display: inline-block; /* Agar ikon tidak menumpuk */
-    margin-right: 10px;
-}
-
-.h-right a:hover {
-    color: var(--main-color);
-    transform: translateY(-3px);
-}
-
-.menu-icon {
-    color: var(--text-color);
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
+    color: var(--main-color); /* Warna hover yang lebih menonjol */
 }
 
 section {
