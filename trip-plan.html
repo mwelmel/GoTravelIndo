@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Trip</title>
+    <link rel="stylesheet" href="styleplan.css">
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const destination = params.get('destination');
+            const startDate = params.get('start-date');
+            const endDate = params.get('end-date');
+
+            document.getElementById('destination-result').innerText = destination;
+            document.getElementById('start-date-result').innerText = startDate;
+            document.getElementById('end-date-result').innerText = endDate;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Trip Plan</h1>
+        <p>Thank you for planning your trip with GoTravelIndo! Here are your details:</p>
+        <ul>
+            <li><strong>Destinasi:</strong> <span id="destination-result"></span></li>
+            <li><strong>Mulai:</strong> <span id="start-date-result"></span></li>
+            <li><strong>Berakhir:</strong> <span id="end-date-result"></span></li>
+        </ul>
+        <a href="plan.html" class="btn">Plan Another Trip</a>
+    </div>
+</body>
+</html>
