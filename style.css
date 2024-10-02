@@ -111,7 +111,7 @@ section {
     font-size: var(--p-font);
     font-weight: 500;
     line-height: 30px;
-    color: #ffffffab;
+    color: #f5f5f5;
     margin-bottom: 35px;
 }
 
@@ -139,6 +139,7 @@ section {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 6px;
     color: var(--main-color);
