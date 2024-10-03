@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="information.css">
+    <script src="information.js"></script>
+    
+</head>
+
+<!-- Header Section -->
+<header>
+    <div class="container2">
+        <a href="#" class="logo">GoTravelIndo</a>
+
+        <nav>
+            <ul class="navbar2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="plan.html">Plan</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card" onclick="openPopup('popup1')">
+            <img src="images/bromo.jpeg" alt="Location 1">
+            <div class="card-text">
+                <p>East Java</p>
+                <h3>Mount Bromo</h3>
+            </div>
+        </div>
+   
+        <!-- Card 2 -->
+        <div class="card" onclick="openPopup('popup2')">
+            <img src="image2.jpg" alt="Location 2">
+            <div class="card-text">
+                <p>East Java</p>
+                <h3>Mount Bromo</h3>
+            </div>
+        </div>
+   
+        <!-- Card 3 -->
+        <div class="card" onclick="openPopup('popup3')">
+            <img src="images/bali.jpeg" alt="Location 3">
+            <div class="card-text">
+                <p>East Java</p>
+                <h3>Mount Bromo</h3>
+            </div>
+        </div>
+   
+        <!-- Card 4 -->
+        <div class="card" onclick="openPopup('popup4')">
+            <img src="image4.jpg" alt="Location 3-4">
+            <div class="card-text">
+                <p>East Java</p>
+                <h3>Mount Bromo</h3>
+            </div>
+        </div>
+   
+        <!-- Card 5 -->
+        <div class="card" onclick="openPopup('popup5')"> <!-- popup4 diubah ke popup5 -->
+            <img src="images/bunaken.jpeg" alt="Location 4-5">
+            <div class="card-text">
+                 <p>East Java</p>
+                <h3>Mount Bromo</h3>
+            </div>
+        </div>
+    </div>
+   
+   
+ 
+    <!-- Pop-up for Card 1 -->
+<div id="popup1" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup1')">&times;</span>
+        <h3>Mount Bromo</h3>
+        <p>Deskripsi tentang Mount Bromo di East Java. Gunung ini terkenal dengan keindahannya dan sering menjadi destinasi wisata yang populer.</p>
+        <button class="back-btn" onclick="closePopup('popup1')">close</button> <!-- Tombol Close -->
+    </div>
+</div>
+ 
+<!-- Pop-up for Card 2 -->
+<div id="popup2" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup2')">&times;</span>
+        <h3>Mount Bromo</h3>
+        <p>Deskripsi kedua tentang tempat ini. Informasi lebih lanjut mengenai keindahan alam dan aktivitas wisata di sekitar Gunung Bromo.</p>
+        <button class="back-btn" onclick="closePopup('popup2')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+ 
+<!-- Pop-up for Card 3 -->
+<div id="popup3" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup3')">&times;</span>
+        <h3>Mount Bromo</h3>
+        <p>Deskripsi ketiga tentang Gunung Bromo. Fakta menarik dan cerita budaya terkait dengan tempat ini.</p>
+        <button class="back-btn" onclick="closePopup('popup3')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+ 
+<!-- Pop-up for Card 4 -->
+<div id="popup4" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup4')">&times;</span>
+        <h3>Mount Bromo</h3>
+        <p>Deskripsi keempat tentang Gunung Bromo. Fakta menarik dan cerita budaya terkait dengan tempat ini.</p>
+        <button class="back-btn" onclick="closePopup('popup4')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+ 
+<!-- Pop-up for Card 5 -->
+<div id="popup5" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup5')">&times;</span>
+        <h3>Mount Bromo</h3>
+        <p>Deskripsi keempat tentang Gunung Bromo. Fakta menarik dan cerita budaya terkait dengan tempat ini.</p>
+        <button class="back-btn" onclick="closePopup('popup5')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+ 
