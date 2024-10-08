@@ -1,4 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish List to Holiday in Indonesia</title>
+    <link rel="stylesheet" href="stylewishlist.css">
+    <script defer src="wishlist.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <h1>The Wish List to Holiday in Indonesia</h1>
+        <p>We hope you can come to Indonesia and experience its magical world.</p>
+
+        <!-- Input section to add new wish items -->
+        <div class="input-section">
+            <input type="text" id="wishItem" placeholder="Enter a place to visit or activity...">
+            <button onclick="addWish()">Add to List</button>
+        </div>
+
+        <!-- Display the wish list items -->
+        <ul id="wishList"></ul>
+
+        <p class="free-text">We can't wait to see your list become a true!</p>
+    </div>
+</body>
 </html>

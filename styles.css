@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
 }
 
 .container {
@@ -67,3 +67,8 @@ button {
 button:hover {
     background-color: #e14e51;
 }
+
+.error {
+    border-color: red;
+}
+
