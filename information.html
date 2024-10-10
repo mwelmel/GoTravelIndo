@@ -1,132 +1,297 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="information.css">
-    <script src="information.js"></script>
-    
+    <title>Image Cards with Pop-up</title>
+    <link rel="stylesheet" href="information.css" >
 </head>
-
-<!-- Header Section -->
-<header>
-    <div class="container2">
-        <a href="#" class="logo">GoTravelIndo</a>
-
-        <nav>
-            <ul class="navbar2">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="plan.html">Plan</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
 <body>
     <div class="container">
         <!-- Card 1 -->
         <div class="card" onclick="openPopup('popup1')">
-            <img src="images/bromo.jpeg" alt="Location 1">
+            <img src="images/bali.jpeg" alt="Location 1">
             <div class="card-text">
-                <p>East Java</p>
-                <h3>Mount Bromo</h3>
+                <p>South of Bali</p>
+                <h3>Grand Wisnu Kencana</h3>
             </div>
         </div>
-   
+    
         <!-- Card 2 -->
         <div class="card" onclick="openPopup('popup2')">
-            <img src="images/bali.jpeg" alt="Location 2">
+            <img src="images/bromo.jpeg"Location 2">
             <div class="card-text">
-                <p>Bali</p>
-                <h3>GWK</h3>
+                <p>East Java</p>
+                <h3>Mount Bromo</h3>
             </div>
         </div>
-   
+    
         <!-- Card 3 -->
         <div class="card" onclick="openPopup('popup3')">
-            <img src="images/bali.jpeg" alt="Location 3">
+            <img src="images/bunaken.jpeg" alt="Location 3">
             <div class="card-text">
-                <p>East Java</p>
-                <h3>Mount Bromo</h3>
+                <p>North Sulawesi</p>
+                <h3>Pulau Bunaken</h3>
             </div>
         </div>
-   
+    
         <!-- Card 4 -->
         <div class="card" onclick="openPopup('popup4')">
-            <img src="image4.jpg" alt="Location 3-4">
+            <img src="images/jogja.jpeg" alt="Location 3-4">
             <div class="card-text">
-                <p>East Java</p>
-                <h3>Mount Bromo</h3>
+                <p>Central Java</p>
+                <h3>Candi Borobudur</h3>
             </div>
         </div>
-   
+    
         <!-- Card 5 -->
-        <div class="card" onclick="openPopup('popup5')"> <!-- popup4 diubah ke popup5 -->
-            <img src="images/bunaken.jpeg" alt="Location 4-5">
+        <div class="card" onclick="openPopup('popup5')"> 
+            <img src="images/kota tua.jpeg" alt="Location 4-5">
             <div class="card-text">
-                 <p>East Java</p>
-                <h3>Mount Bromo</h3>
+                 <p>Jakarta</p>
+                <h3>Kota Tua</h3>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" onclick="openPopup('popup6')"> 
+            <img src="images/labuan bajo.jpeg" alt="Location 4-5">
+            <div class="card-text">
+                 <p>East Nusa Tenggara</p>
+                <h3>Labuan Bajo</h3>
             </div>
         </div>
     </div>
-   
-   
- 
+    
+    
+
     <!-- Pop-up for Card 1 -->
 <div id="popup1" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup('popup1')">&times;</span>
-        <h3>Mount Bromo</h3>
-        <p>Deskripsi tentang Mount Bromo di East Java. Gunung ini terkenal dengan keindahannya dan sering menjadi destinasi wisata yang populer.</p>
+        <h3>Grand Wisnu Kencana</h3>
+        <p>Grand Wisnu Kencana (GWK) adalah taman budaya yang terletak di Bukit Ungasan, Badung, Bali, Indonesia, dan dibangun dengan tujuan menjadi simbol kebudayaan Indonesia, khususnya Bali. 
+        Proyek ini dimulai pada tahun 1990 oleh seniman dan pematung I Nyoman Nuarta, dengan patung raksasa Dewa Wisnu yang mengendarai Burung Garuda sebagai daya tarik utamanya. 
+        Pembangunan fisik dimulai pada tahun 1997, tetapi sempat terhenti karena krisis ekonomi Asia. 
+        Patung Dewa Wisnu selesai dibangun dan diresmikan pada tahun 2018, menjadikannya salah satu patung terbesar di dunia. 
+        Selain sebagai objek wisata, GWK juga berfungsi sebagai pusat kebudayaan yang menyajikan berbagai pertunjukan seni dan acara budaya, menarik banyak pengunjung dari dalam dan luar negeri.</p>
         <button class="back-btn" onclick="closePopup('popup1')">close</button> <!-- Tombol Close -->
     </div>
 </div>
- 
+
 <!-- Pop-up for Card 2 -->
 <div id="popup2" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup('popup2')">&times;</span>
         <h3>Mount Bromo</h3>
-        <p>Deskripsi kedua tentang tempat ini. Informasi lebih lanjut mengenai keindahan alam dan aktivitas wisata di sekitar Gunung Bromo.</p>
+        <p>Gunung Bromo adalah salah satu gunung berapi paling terkenal di Indonesia, terletak di Taman Nasional Bromo Tengger Semeru, Jawa Timur. 
+        Secara geologis, Gunung Bromo adalah bagian dari kompleks vulkanik yang terdiri dari beberapa gunung, dengan puncak tertinggi adalah Semeru, yang juga merupakan gunung tertinggi di Pulau Jawa. 
+        Gunung Bromo memiliki sejarah aktivitas vulkanik yang panjang, dengan erupsi terbesarnya terjadi pada tahun 1972 dan 2010. 
+        Kawasan ini memiliki nilai budaya yang tinggi bagi masyarakat Tengger, yang percaya bahwa Gunung Bromo adalah tempat suci. 
+        Setiap tahun, masyarakat Tengger mengadakan upacara Yadnya Kasada, di mana mereka mempersembahkan sesaji ke kawah gunung sebagai bentuk penghormatan kepada dewa. 
+        Selain keindahan alamnya, Bromo juga dikenal dengan sunrise yang spektakuler, menarik wisatawan dari seluruh dunia untuk menikmati pemandangan menakjubkan.</p>
         <button class="back-btn" onclick="closePopup('popup2')">Close</button> <!-- Tombol Close -->
     </div>
 </div>
- 
+
 <!-- Pop-up for Card 3 -->
 <div id="popup3" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup('popup3')">&times;</span>
-        <h3>Mount Bromo</h3>
-        <p>Deskripsi ketiga tentang Gunung Bromo. Fakta menarik dan cerita budaya terkait dengan tempat ini.</p>
+        <h3>Pulau Bunaken</h3>
+        <p>Pulau Bunaken adalah sebuah pulau kecil yang terletak di sebelah utara Sulawesi, Indonesia, dan merupakan bagian dari Taman Nasional Bunaken, yang didirikan pada tahun 1991. 
+        Pulau ini terkenal karena keindahan bawah lautnya, dengan terumbu karang yang kaya akan keanekaragaman hayati, termasuk berbagai spesies ikan, penyu, dan moluska. 
+        Sejarah Bunaken dimulai sebagai tempat tinggal suku Minahasa yang mengandalkan laut sebagai sumber kehidupan. 
+        Pada tahun 1975, wilayah sekitar Bunaken ditetapkan sebagai kawasan konservasi untuk melindungi ekosistem lautnya. 
+        Sejak itu, pulau ini telah menjadi tujuan wisata dunia, menarik penyelam dan pecinta alam yang ingin mengeksplorasi keindahan bawah lautnya. 
+        Bunaken juga menghadapi tantangan konservasi, dan berbagai upaya dilakukan untuk menjaga kelestarian lingkungan laut serta mendukung kehidupan masyarakat lokal.</p>
         <button class="back-btn" onclick="closePopup('popup3')">Close</button> <!-- Tombol Close -->
     </div>
 </div>
- 
+
 <!-- Pop-up for Card 4 -->
 <div id="popup4" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup('popup4')">&times;</span>
-        <h3>Mount Bromo</h3>
-        <p>Deskripsi keempat tentang Gunung Bromo. Fakta menarik dan cerita budaya terkait dengan tempat ini.</p>
+        <h3>Candi Borobudur</h3>
+        <p>Candi Borobudur adalah salah satu candi Buddha terbesar dan terpenting di dunia, terletak di Magelang, Jawa Tengah, Indonesia. 
+            Dibangun pada abad ke-8 dan ke-9 selama pemerintahan Dinasti Syailendra, candi ini mencerminkan puncak seni arsitektur dan budaya Buddha di Indonesia. 
+            Borobudur terdiri dari sembilan tingkat yang melambangkan perjalanan spiritual menuju pencerahan, dengan lebih dari 2.600 panel relief yang menggambarkan ajaran Buddha. 
+            Setelah ditinggalkan pada abad ke-14, candi ini terkubur di bawah abu vulkanik dan vegetasi selama berabad-abad hingga ditemukan kembali pada abad ke-19. 
+            Pada tahun 1991, Borobudur diakui sebagai Situs Warisan Dunia oleh UNESCO, dan kini menjadi salah satu destinasi wisata paling terkenal di Indonesia, serta pusat studi dan penelitian tentang kebudayaan Buddha.</p>
         <button class="back-btn" onclick="closePopup('popup4')">Close</button> <!-- Tombol Close -->
     </div>
 </div>
- 
+
 <!-- Pop-up for Card 5 -->
 <div id="popup5" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup('popup5')">&times;</span>
-        <h3>Mount Bromo</h3>
-        <p>Deskripsi keempat tentang Gunung Bromo. Fakta menarik dan cerita budaya terkait dengan tempat ini.</p>
+        <h3>Kota Tua</h3>
+        <p>Kota Tua Jakarta, atau Batavia, merupakan kawasan bersejarah yang mencerminkan jejak sejarah dan perkembangan Jakarta sebagai pusat perdagangan di Asia Tenggara pada masa kolonial. 
+        Didirikan oleh Belanda pada abad ke-17, kawasan ini dulunya merupakan ibu kota Hindia Belanda dan menjadi pusat kegiatan perdagangan dengan dibangunnya pelabuhan dan berbagai gedung bergaya Eropa. 
+        Selama masa kejayaannya, Kota Tua dipenuhi oleh bangunan ikonik seperti Gedung Fatahillah, Museum Sejarah Jakarta, dan Gereja Sion. 
+        Setelah kemerdekaan Indonesia, kawasan ini mengalami penurunan, tetapi upaya revitalisasi telah dilakukan untuk mengembalikan pesonanya sebagai destinasi wisata. 
+        Kini, Kota Tua Jakarta menjadi simbol warisan budaya yang kaya, menarik pengunjung dengan keindahan arsitektur dan nilai sejarahnya.</p>
         <button class="back-btn" onclick="closePopup('popup5')">Close</button> <!-- Tombol Close -->
     </div>
 </div>
- 
-    <script src="script.js"></script>
+
+<!-- Pop-up for Card 6 -->
+<div id="popup6" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup6')">&times;</span>
+        <h3>Labuan Bajo</h3>
+        <p>Labuan Bajo adalah sebuah kota kecil yang terletak di ujung barat Pulau Flores, Nusa Tenggara Timur, Indonesia. 
+        Sebagai pelabuhan utama menuju Taman Nasional Komodo, Labuan Bajo semakin dikenal sebagai destinasi wisata internasional yang menawarkan keindahan alam dan keanekaragaman hayati yang luar biasa. 
+        Sejarah kota ini dimulai sebagai pelabuhan perdagangan yang penting pada masa lalu, terutama untuk perdagangan rempah-rempah dan hasil laut. 
+        Dalam beberapa tahun terakhir, Labuan Bajo telah mengalami perkembangan pesat dalam infrastruktur pariwisata, menjadikannya sebagai titik awal bagi wisatawan yang ingin mengeksplorasi pulau-pulau di sekitarnya, termasuk Pulau Komodo dan Rinca, serta menikmati keindahan alamnya yang spektakuler, seperti pantai, perairan jernih, dan pemandangan bukit yang menakjubkan.</p>
+        <button class="back-btn" onclick="closePopup('popup6')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+
+<!-- Container untuk card2 -->
+<div class="container2">
+    <!-- Card 7 -->
+    <div class="card2" onclick="openPopup('popup7')">
+        <img src="images/malioboro.jpeg" alt="Location 1">
+        <div class="card-text2">
+            <p>Yogtakarta</p>
+            <h3>Malioboro</h3>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card2" onclick="openPopup('popup8')">
+        <img src="images/nusapenida.jpeg" alt="Location 2">
+        <div class="card-text2">
+            <p>Southeast of Bali</p>
+            <h3>Nusa Peninda</h3>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card2" onclick="openPopup('popup9')">
+        <img src="images/rajaampast.jpeg" alt="Location 3">
+        <div class="card-text2">
+            <p>West Papua</p>
+            <h3>Raja Ampat</h3>
+        </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card2" onclick="openPopup('popup10')">
+        <img src="images/sumaterabarat.jpeg" alt="Location 3-4">
+        <div class="card-text2">
+            <p>West Sumatra</p>
+            <h3>Jam Gandang</h3>
+        </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card2" onclick="openPopup('popup11')">
+        <img src="images/sumateraselatan.jpeg" alt="Location 4-5">
+        <div class="card-text2">
+            <p>North Sumatra</p>
+            <h3>Danau Toba</h3>
+        </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="card2" onclick="openPopup('popup12')">
+        <img src="images/toraja.jpg" alt="Location 4-5">
+        <div class="card-text2">
+            <p>South Sulawesi</p>
+            <h3>Buntu Burake Toraja</h3>
+        </div>
+    </div>
+</div>
+
+ <!-- Pop-up for Card 7 -->
+ <div id="popup7" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup7')">&times;</span>
+        <h3>Malioboro</h3>
+        <p>Malioboro memiliki sejarah yang kaya dan merupakan salah satu pusat budaya dan perdagangan di Yogyakarta. 
+        Nama "Malioboro" berasal dari kata "Malioboro" yang berarti "jalan menuju istana" dalam bahasa Jawa. 
+        Kawasan ini mulai berkembang pada abad ke-18 ketika Sultan Hamengkubuwono I memindahkan pusat pemerintahan ke Yogyakarta. 
+        Sejak saat itu, Malioboro menjadi jalan utama yang menghubungkan Keraton Yogyakarta dengan pelabuhan di Parangtritis. 
+        Selama masa kolonial Belanda, Malioboro mengalami perubahan signifikan dengan dibangunnya berbagai bangunan bergaya Eropa.
+        Saat ini, Malioboro dikenal sebagai tempat yang ramai, dengan pasar tradisional, pusat perbelanjaan, dan berbagai atraksi budaya yang mencerminkan warisan sejarah dan tradisi Yogyakarta.</p>
+        <button class="back-btn" onclick="closePopup('popup7')">close</button> <!-- Tombol Close -->
+    </div>
+</div>
+
+<!-- Pop-up for Card 8 -->
+<div id="popup8" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup8')">&times;</span>
+        <h3>Nusa Peninda</h3>
+        <p>Nusa Penida, sebuah pulau yang terletak di tenggara Bali, memiliki sejarah yang kaya dan unik. Pulau ini dikenal sebagai tempat tinggal masyarakat Hindu Bali, yang telah ada sejak berabad-abad yang lalu.
+        Nusa Penida juga memiliki peranan penting dalam mitologi dan budaya Bali, di mana pulau ini sering dianggap sebagai tempat suci. 
+        Selama masa kolonial, Nusa Penida mengalami pengaruh Belanda, yang berimbas pada perubahan sosial dan ekonomi masyarakat setempat. 
+        Kini, pulau ini menjadi tujuan wisata yang populer, dikenal dengan keindahan alamnya yang spektakuler, termasuk pantai, tebing, dan terumbu karang yang menawan. 
+        Keberadaan atraksi seperti Angel's Billabong dan Kelingking Beach menambah daya tarik Nusa Penida sebagai destinasi wisata yang menarik.</p>
+        <button class="back-btn" onclick="closePopup('popup8')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+
+<!-- Pop-up for Card 9 -->
+<div id="popup9" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup9')">&times;</span>
+        <h3>Raja Ampat</h3>
+        <p>Raja Ampat memiliki sejarah yang kaya dan beragam, dipengaruhi oleh berbagai kebudayaan dan peradaban yang telah mengunjungi dan menetap di wilayah tersebut. 
+        Nama "Raja Ampat" sendiri berasal dari legenda lokal yang menceritakan tentang empat raja yang memerintah empat pulau utama di kepulauan ini. 
+        Sejak abad ke-15, wilayah ini menjadi jalur perdagangan penting antara pulau-pulau di Indonesia, serta menjadi pusat perdagangan rempah-rempah. 
+        Pada abad ke-19, Raja Ampat berada di bawah pengaruh kekuasaan kolonial Belanda, yang mengontrol sebagian besar wilayah Indonesia. 
+        Saat ini, Raja Ampat dikenal sebagai destinasi wisata internasional yang terkenal dengan keanekaragaman hayati, ekosistem laut yang sehat, dan budaya lokal yang kaya. 
+        Kepulauan ini menjadi salah satu kawasan konservasi yang dilindungi, berupaya untuk menjaga dan melestarikan keindahan alam dan budaya yang ada.</p>
+        <button class="back-btn" onclick="closePopup('popup9')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+
+<!-- Pop-up for Card 10 -->
+<div id="popup10" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup10')">&times;</span>
+        <h3>Jam Gandang</h3>
+        <p>Jam Gadang, menara jam ikonik yang terletak di Bukittinggi, Sumatera Barat, Indonesia, dibangun pada tahun 1926 oleh pemerintah kolonial Belanda. 
+        Desainnya yang megah mencerminkan arsitektur khas Minangkabau, dengan atap bersusun yang menyerupai tanduk kerbau. 
+        Jam ini awalnya digunakan untuk kepentingan pemerintah kolonial, namun seiring waktu, menjadi simbol kebanggaan masyarakat Bukittinggi. 
+        Keberadaannya yang strategis di pusat kota menjadikannya sebagai titik pertemuan dan objek wisata populer. 
+        Jam Gadang juga memiliki nilai sejarah yang mendalam, mencerminkan perjalanan sejarah Indonesia selama masa penjajahan.</p>
+        <button class="back-btn" onclick="closePopup('popup10')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+
+<!-- Pop-up for Card 11 -->
+<div id="popup11" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup11')">&times;</span>
+        <h3>Danau Toba</h3>
+        <p>Danau Toba terbentuk sekitar 74.000 tahun yang lalu akibat letusan supervulkanik yang terjadi di wilayah tersebut. 
+        Letusan ini merupakan salah satu yang terbesar dalam sejarah Bumi dan menyebabkan perubahan besar dalam iklim global. 
+        Danau ini memiliki panjang sekitar 100 kilometer dan lebar 30 kilometer, dengan Pulau Samosir di tengahnya yang merupakan tempat tinggal suku Batak. 
+        Selain menjadi tujuan wisata terkenal, Danau Toba juga memiliki nilai budaya dan spiritual yang tinggi bagi masyarakat Batak, yang menganggapnya sebagai tempat yang kaya akan mitologi dan sejarah. 
+        Kini, Danau Toba menjadi salah satu ikon pariwisata Indonesia, menarik banyak pengunjung lokal dan internasional untuk menikmati keindahan alam dan budaya yang ada di sekitarnya.</p>
+        <button class="back-btn" onclick="closePopup('popup11')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+
+<!-- Pop-up for Card 12 -->
+<div id="popup12" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="ClosePopup('popup12')">&times;</span>
+        <h3>Buntu Burake Toraja</h3>
+        <p>Buntu Burake adalah sebuah lokasi bersejarah yang terletak di Kabupaten Tana Toraja, Sulawesi Selatan. 
+        Sebagai titik tertinggi di Toraja, Buntu Burake bukan hanya menawarkan pemandangan alam yang spektakuler, tetapi juga memiliki makna budaya yang dalam bagi masyarakat Toraja. 
+        Tempat ini menjadi simbol spiritual dan budaya, sering digunakan dalam ritual dan perayaan adat. 
+        Buntu Burake juga menjadi saksi bisu bagi perjalanan sejarah masyarakat Toraja, yang dikenal dengan tradisi pemakaman yang unik dan arsitektur rumah adat yang khas. 
+        Masyarakat setempat percaya bahwa Buntu Burake merupakan tempat bersemayamnya roh nenek moyang, sehingga tempat ini memiliki nilai sakral yang tinggi dalam kehidupan sosial dan budaya mereka.</p>
+        <button class="back-btn" onclick="closePopup('popup12')">Close</button> <!-- Tombol Close -->
+    </div>
+</div>
+    <script src="information.js"></script>
 </body>
 </html>
- 
